@@ -18,7 +18,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-ul {
+.list {
   list-style: none;
 }
 
@@ -30,7 +30,6 @@ ul {
   line-height: 1.92;
 }
 
-.address,
 .nav-contacts,
 .nav-link {
   letter-spacing: 0.02em;
@@ -47,6 +46,10 @@ ul {
 .nav-link:focus,
 .nav-contacts:hover,
 .nav-contacts:focus,
+.address-link:hover,
+.address-link:focus,
+.address-street:hover,
+.address-street:focus,
 .logo-web,
 .current {
   color: var(--accent-color);
@@ -74,18 +77,12 @@ ul {
   text-transform: uppercase;
 }
 
-.hero-button {
-  font-weight: 700;
-  line-height: 1.88;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-}
-
 .hero-title,
-.address,
 .portfolio-button:hover,
-.hero-button {
+.hero-button,
+.logo-studio,
+.address,
+.address-street {
   color: var(--white-text);
 }
 
@@ -164,11 +161,23 @@ ul {
 }
 
 /* Buttons */
-.hero-button,
+
 .portfolio-button {
   cursor: pointer;
+  font-size: 16px;
   font-family: inherit;
   letter-spacing: 0.03em;
+}
+
+.hero-button {
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 /* Footer */
@@ -178,4 +187,8 @@ ul {
 
 .address {
   font-style: normal;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
